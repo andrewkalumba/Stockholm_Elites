@@ -1,0 +1,24 @@
+.cities {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    padding: 16px;
+}
+
+.city {
+    color: bisque;
+    font-size: 1.2rem;
+    display: flex;
+}
+
+a {
+    color: bisque;
+    text-decoration: none;
+}
+
+@media screen and (max-width:768px) {
+    .cities {
+        display: none;
+    }
+
+}

@@ -1,0 +1,24 @@
+.appWrapper {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+  }
+  
+  .gridContainer {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 20px;
+  }
+  
+  .containerBox {
+    grid-column: span 3;
+  }
+  
+  .buildingsBox {
+    grid-column: span 3;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  

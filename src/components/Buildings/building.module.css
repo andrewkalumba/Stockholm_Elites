@@ -1,0 +1,14 @@
+.menu {
+    font-size: 1rem;
+    min-height: 100vh;
+}
+
+.product {
+    color: antiquewhite;
+    font-size: 1.2rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 7px;
+    padding: 16px;
+    text-align: center;
+}

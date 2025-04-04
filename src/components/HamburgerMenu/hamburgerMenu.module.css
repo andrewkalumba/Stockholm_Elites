@@ -1,0 +1,29 @@
+.cities {
+    position: relative;
+}
+
+.hamburger {
+    display: none; 
+    font-size: 24px;
+    cursor: pointer;
+}
+.city {
+    padding: 10px; 
+    cursor: pointer; 
+}
+
+@media screen and (max-width: 768px) {
+    .hamburger {
+        display: block;
+    }
+    .cities {
+        background: rgba(0, 0, 0, 0.5);
+    }
+
+    .navItems {
+        color: #4FD1C5;
+
+    }
+}
+
+

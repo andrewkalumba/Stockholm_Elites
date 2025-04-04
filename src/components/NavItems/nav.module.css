@@ -1,0 +1,7 @@
+.menuItem {
+    font-size: 1rem;
+    cursor: pointer;
+    padding: 3px;
+    color: aliceblue;
+    margin-left: 20px;
+}

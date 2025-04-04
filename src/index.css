@@ -1,0 +1,18 @@
+* {
+  box-sizing: border-box;
+}
+:root {
+  height: 100%;
+}
+
+html {
+  height: 100vh;
+}
+
+body {
+  background-image: url('../src/assets/flower3.jpeg');
+  background-size: cover;
+  background-attachment: fixed;
+  height: 100%;
+  margin: 0;
+}
