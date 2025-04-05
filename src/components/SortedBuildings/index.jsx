@@ -4,6 +4,9 @@ import { getImageUrl } from '../../utils/function'
 
 const SortedBuildings = ({ item2 }) => {
     const [showMore, setShowMore] = useState(false);
+    const handleClick = () => {
+        setShowMore(!showMore)
+    }
     return (
         <div className={styles.item}>
             <h3>{item2.type}</h3>
@@ -23,7 +26,7 @@ const SortedBuildings = ({ item2 }) => {
               </div>
             )}
 
-            <button onClick={() => setShowMore(!showMore)}>
+            <button onClick={handleClick}>
                 {showMore ? 'Show Less' : 'Read More'}
             </button>
 

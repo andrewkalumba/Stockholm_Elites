@@ -1,0 +1,16 @@
+.pageTitle {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #f2ecec;
+    margin-top: 1rem;
+    text-align: center;
+    text-transform: uppercase;
+  }
+
+  @media screen and (max-width:768px) {
+    .pageTitle {
+        font-size: .7rem;
+        text-transform: capitalize;
+    }
+  }
+  

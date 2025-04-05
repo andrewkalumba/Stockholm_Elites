@@ -1,15 +1,20 @@
-import styles from './header.module.css'
-import Navigation from "../Navigation"
-import Logo from '../Logo'
-import HamburgerMenu from '../HamburgerMenu'
+import styles from './header.module.css';
+import Navigation from "../Navigation";
+import Logo from '../Logo';
+import HamburgerMenu from '../HamburgerMenu';
+import PageTitle from '../PageTitle';
 
-const Header = ({ onChangeRental }) => {
+const Header = ({ onChangeRental, selectedPage }) => {
     return (
-        <div className={styles.header}>
+        <header className={styles.header}>
             <Logo />
-            <Navigation onChangeRental2={onChangeRental} />
-            <HamburgerMenu onChangeRental2={onChangeRental}/>
-        </div>
-    )
-}
-export default Header
+            <div className={styles.page}>
+                <PageTitle currentPage={selectedPage} />
+                <Navigation onChangeRental2={onChangeRental} currentPage={selectedPage}/>
+            </div>
+            <HamburgerMenu onChangeRental2={onChangeRental} />
+        </header>
+    );
+};
+
+export default Header;

@@ -1,7 +1,6 @@
 .cities {
     display: flex;
     justify-content: center;
-    gap: 16px;
     padding: 16px;
 }
 
@@ -15,10 +14,13 @@ a {
     color: bisque;
     text-decoration: none;
 }
+.active {
+    font-weight: bold;
+    color: #ff6347; /* Add any styling for the active state */
+  }
 
 @media screen and (max-width:768px) {
     .cities {
         display: none;
     }
-
 }

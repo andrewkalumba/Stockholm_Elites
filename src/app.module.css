@@ -1,4 +1,4 @@
-.appWrapper {
+.mainContainer{
     display: flex;
     flex-direction: column;
     height: 100vh;
@@ -20,5 +20,13 @@
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
+  }
+
+  @media screen and (max-width:768px) {
+    .gridContainer {
+        display: block;
+        padding: 0;
+    }
+    
   }
   

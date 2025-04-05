@@ -1,7 +1,9 @@
 import logo from '../../assets/rentalLogo.jpg'
+import styles from './logo.module.css'
+
 const Logo = () => {
     return (
-        <img src={logo} alt="rentals" height={65}/>
+        <img className={styles.image} src={logo} alt="rentals" />
     )
 }
 

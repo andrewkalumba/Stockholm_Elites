@@ -9,11 +9,12 @@ const Buildings = ({ selectedRental2 }) => {
     if (!selectedRental2 || selectedRental2 === 'About' || selectedRental2 === 'Contact') return RentalsData;
     return RentalsData.filter(item => item.type === selectedRental2);
   };
+  const imageItem1 = filteredRentals()[18]; 
 
   return (
     <div className={styles.menu}>
-      <div className={styles.product}> { selectedRental2=== 'About' ? (<AboutUs/>
-        ) : selectedRental2 === 'Contact' ? (<ContactForm/>
+      <div className={styles.product}> { selectedRental2 === 'About' ? (<AboutUs item2={imageItem1} />
+        ) : selectedRental2 === 'Contact' ? (<ContactForm />
         ): filteredRentals().length > 0 ? (filteredRentals().map((item, index) => (<SortedBuildings key={index} item2={item} />))
         ) : (
             <p>404</p>
@@ -24,6 +25,9 @@ const Buildings = ({ selectedRental2 }) => {
 };
 
 export default Buildings;
+
+
+
 
 
 
